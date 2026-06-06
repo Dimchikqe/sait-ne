@@ -633,19 +633,20 @@
 
   <div class="contact-wrap reveal">
     <form class="contact-form" action="https://formspree.io/f/mbdedaer" method="POST">
+      <input type="hidden" name="_subject" value="Нова заявка">
       <h3>Залишити заявку</h3>
 
       <div class="field">
         <label>Ваше ім'я</label>
-        <input type="text" placeholder="Іван Іваненко">
+        <input type="text" name="name" placeholder="Іван Іваненко">
       </div>
       <div class="field">
         <label>Телефон</label>
-        <input type="tel" placeholder="+38 (0__)  ___-__-__">
+        <input type="tel" name="phone" placeholder="+38 (0_) ___-__-__">
       </div>
       <div class="field">
         <label>Тип техніки</label>
-        <select>
+        <select name="device">
           <option value="" disabled selected>Оберіть техніку</option>
           <option>Пральна машина</option>
           <option>Посудомийна машина</option>
@@ -658,7 +659,7 @@
       </div>
       <div class="field">
         <label>Опишіть проблему</label>
-        <textarea placeholder="Наприклад: не віджимає, не набирає воду, видає помилку Е1..."></textarea>
+        <textarea name="message" placeholder="Наприклад: не віджимає, не набирає воду, видає помилку Е1..."></textarea>
       </div>
       <button class="btn-submit" onclick="this.textContent='✓ Заявку прийнято!'; this.style.background='linear-gradient(90deg,#00c87a,#00d4ff)';">
         
